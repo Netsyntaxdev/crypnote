@@ -11,14 +11,14 @@
 	<h1>About</h1>
 
 	<p>
-		<i>crypnote</i> es un servicio seguro y de código abierto para compartir notas/archivos.
+		<i>CRYPNOTE By Idecnet</i> es un servicio seguro para compartir notas/archivos de manera totalmente encriptada.
 	</p>
 
 	<AboutParagraph title="Como funciona?">
 		<span>
 			cada nota tiene un generado <code>id (256bit)</code> y <code>key 256(bit)</code>. El
 			<code>id</code>
-			El id se utiliza para guardar y recuperar la nota. Luego, la nota se cifra con aes en modo gcm
+			se utiliza para guardar y recuperar la nota. Luego, la nota se cifra con aes en modo gcm
 			en el lado del cliente <code>key</code> luego se envía al servidor. los datos se almacenan en la 
 			memoria y nunca persisten en el disco. el servidor nunca ve la clave de cifrado y no puede  
 			descifrar el contenidode las notas
