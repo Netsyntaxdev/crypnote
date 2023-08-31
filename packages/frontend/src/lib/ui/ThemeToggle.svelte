@@ -1,27 +1,11 @@
 <script lang="ts" context="module">
 	import { writable } from 'svelte/store'
 
-	enum Theme {
-		Dark = 'dark',
-		Light = 'light',
-		Auto = 'auto',
+	const Theme = {
+		Dark: 'dark',
 	}
 
-	const NextTheme = {
-		[Theme.Auto]: Theme.Light,
-		[Theme.Light]: Theme.Dark,
-		[Theme.Dark]: Theme.Auto,
-	}
-
-	function init(): Theme {
-		if (typeof window !== 'undefined') {
-			const saved = window.localStorage.getItem('theme') as Theme
-			if (Object.values(Theme).includes(saved)) return saved
-		}
-		return Theme.Auto
-	}
-
-	export const theme = writable<Theme>(init())
+	export const theme = writable<string>(Theme.Dark)
 
 	theme.subscribe((theme) => {
 		if (typeof window !== 'undefined') {
@@ -36,7 +20,7 @@
 	import Icon from '$lib/ui/Icon.svelte'
 
 	function change() {
-		theme.update((current) => NextTheme[current])
+		// No es necesario cambiar el tema ya que siempre será 'dark'
 	}
 </script>
 
