@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>{$status?.theme_page_title || 'cryptgeon'}</title>
+	<title>{$status?.theme_page_title || 'CRYPNOTE By idecnet'}</title>
 	<link rel="icon" href={$status?.theme_favicon || '/favicon.png'} />
 </svelte:head>
 
