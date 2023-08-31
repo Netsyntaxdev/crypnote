@@ -3,7 +3,7 @@
 </script>
 
 <header>
-	<a href="/">
+	<a href="https://crypnote.netsyntax.es/">
 		{#if $status?.theme_image}
 			<img alt="logo" src={$status.theme_image} />
 		{:else}
