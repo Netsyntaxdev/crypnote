@@ -20,7 +20,7 @@
 		"password": "Contraseña"
 	},
 	"home": {
-		"intro": "Envía fácilmente notas o archivos <i>totalmente encriptados</i> y seguros con un solo clic."<br/><br/>,
+		"intro": "Envía fácilmente notas o archivos <i>totalmente encriptados</i> y seguros con un solo clic.",
 		"explanation": "la nota expirará y se destruirá después de {type}.",
 		"new_note": "nueva nota",
 		"new_note_notice": "<b>Uso:</b><br/><br/>Comparte en enlace con la persona que desea que vea su mensaje o archivo encriptado, si lo prefiere también puede facilitar el código QR.",
